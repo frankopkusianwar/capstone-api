@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_26_175426) do
+ActiveRecord::Schema.define(version: 2020_10_26_184954) do
 
   create_table "reservations", force: :cascade do |t|
     t.string "city"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2020_10_26_175426) do
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "email"
   end
 
   add_foreign_key "reservations", "rooms"
