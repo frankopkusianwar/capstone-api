@@ -5,5 +5,5 @@ class User < ApplicationRecord
   # Model associations
   has_many :reservations, foreign_key: :reserved_by
   # Validations
-  validates_presence_of :name, :password_digest
+  validates_presence_of :username, :password_digest
 end
