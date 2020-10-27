@@ -4,7 +4,8 @@ module V1
     skip_before_action :authorize_request, only: :index
 
     def index
-      render json: Room.all
+      rooms = Room.all.paginate(page: params[:page], per_page: 5)
+      render json: rooms
     end
   end
 end

@@ -162,6 +162,7 @@ GEM
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    will_paginate (3.1.8)
     zeitwerk (2.4.0)
 
 PLATFORMS
@@ -181,6 +182,7 @@ DEPENDENCIES
   shoulda-matchers (~> 3.1)
   sqlite3 (~> 1.4)
   tzinfo-data
+  will_paginate (~> 3.1.0)
 
 RUBY VERSION
    ruby 2.6.6p146
