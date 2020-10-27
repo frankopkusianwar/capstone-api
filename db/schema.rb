@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_27_095342) do
+ActiveRecord::Schema.define(version: 2020_10_27_100626) do
 
   create_table "reservations", force: :cascade do |t|
     t.string "city"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 2020_10_27_095342) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "email"
+    t.index "\"user_id\"", name: "index_users_on_user_id"
   end
 
   add_foreign_key "reservations", "rooms"
