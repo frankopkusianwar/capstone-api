@@ -1,5 +1,12 @@
 require 'rails_helper'
 
+# Test suite for the Reservation model
 RSpec.describe Reservation, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  # Association test
+  it { should belong_to(:Room) }
+  it { should belong_to(:User) }
+
+  # Validation test
+  it { should validate_presence_of(:date) }
+  it { should validate_presence_of(:city) }
 end
