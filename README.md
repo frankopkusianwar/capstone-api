@@ -9,17 +9,11 @@ Reservation API enables any/every person to view a list of available rooms and t
 - Ruby on Rails
 
 ## Functionality
-- `create red-flag record` Enables user to create a red-flag record
-- `Get all red-flags` Enables user to view all red-flag records
-- `Get all interventions` Enables user to view all intervention records
-- `Get single red-flag` Enables user  to get a specific red-flag record
-- `Get single intervention` Enables user  to get a specific intervention record
-- `update comment` Enables  user to add a comment to a red-flag record 
-- `create new user` Enables  users to create accounts
+- `get all rooms` Enables user to view a list of rooms
+- `Get single room` Enables user to view details of a specific room
+- `Get all reservations` Enables user to view all their reservations
+- `Create reservation` Enables user  to make a room reservation
 - `create login user` Enables  users to access all the protected endpoints
-- `update location` Enables  users to update specific red-flag and intervention location 
-- `delete red-flag`Enables users to delete red-flag  records
-- `delete intervention`Enables users to delete intervention  records
 
 ## Heroku Link
 
