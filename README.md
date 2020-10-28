@@ -17,7 +17,7 @@ Reservation API enables any/every person to view a list of available rooms and t
 
 ## Heroku Link
 
-- link
+[Live Demo Link](https://capstone-api-v1.herokuapp.com/rooms)
 
 ## Installation
 Clone the repository
