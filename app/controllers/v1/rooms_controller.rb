@@ -1,7 +1,6 @@
 module V1
   class RoomsController < ApplicationController
-
-    skip_before_action :authorize_request, only: [:index, :show]
+    skip_before_action :authorize_request, only: %i[index show]
 
     def index
       rooms = Room.all.paginate(page: params[:page], per_page: 5)

@@ -1,9 +1,8 @@
 module V1
   class ReservationsController < ApplicationController
-    
     def index
       @reservations = current_user.reservations.paginate(page: params[:page], per_page: 5)
-      render json:  @reservations
+      render json: @reservations
     end
 
     def create
