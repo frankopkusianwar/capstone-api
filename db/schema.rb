@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_28_104313) do
+ActiveRecord::Schema.define(version: 2020_11_02_061615) do
 
   create_table "reservations", force: :cascade do |t|
     t.string "city"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2020_10_28_104313) do
     t.string "title"
     t.string "size"
     t.string "bed"
+    t.string "image"
   end
 
   create_table "users", force: :cascade do |t|
