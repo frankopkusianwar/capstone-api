@@ -3,7 +3,7 @@ module V1
     skip_before_action :authorize_request, only: %i[index show]
 
     def index
-      rooms = Room.all.paginate(page: params[:page], per_page: 5)
+      rooms = Room.all.
       render json: rooms
     end
 
