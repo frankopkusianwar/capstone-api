@@ -10,7 +10,6 @@ module V1
 
     def create
       reservation = Reservation.new(reservation_params)
-      reservation.user_id = 2
       if reservation.save
         render json: reservation, status: :created
       else
