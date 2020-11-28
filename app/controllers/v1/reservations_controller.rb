@@ -1,7 +1,7 @@
 module V1
   class ReservationsController < ApplicationController
 
-    skip_before_action :authorize_request, only: %i[index create]
+    skip_before_action :authorize_request, only: %i[create]
 
     def index
       @reservations = current_user.reservations.paginate(page: params[:page], per_page: 5)
