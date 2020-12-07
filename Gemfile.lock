@@ -171,7 +171,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     thor (1.0.1)
     thread_safe (0.3.6)
     tzinfo (1.2.7)
@@ -196,14 +195,13 @@ DEPENDENCIES
   factory_bot_rails (~> 4.0)
   faker
   jwt
-  pg (= 1.1.4)
+  pg
   puma (~> 4.1)
   rack-cors
   rails (~> 6.0.3, >= 6.0.3.4)
   rspec-rails (~> 3.5)
   rubocop (~> 0.81.0)
   shoulda-matchers (~> 3.1)
-  sqlite3 (~> 1.4)
   tzinfo-data
   will_paginate (~> 3.1.0)
 

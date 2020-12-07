@@ -31,14 +31,10 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails', '~> 3.5'
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '~> 1.4'
+  gem 'pg'
 end
 
 group :development do
-end
-
-group :production do
-  gem 'pg', '1.1.4'
 end
 
 group :test do
