@@ -1,6 +1,5 @@
 module V1
   class ReservationsController < ApplicationController
-
     skip_before_action :authorize_request, only: %i[create]
 
     def index
